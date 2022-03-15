@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day11_Assessment.Data" table="data">
+        <id name="id" type="int">
+            <generator class="increment"></generator>
+<!--            <column name="id"></column>-->
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="location" column="location" type="string"/>
+
+    </class>
+</hibernate-mapping>

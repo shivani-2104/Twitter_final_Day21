@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day9.Person1" table="Person1">
+        <id name="id" type="int">
+            <column name="id"></column>
+            <generator class="increment"></generator>
+        </id>
+        <property name="name" column="name" type="string"/>
+    </class>
+    <class name="com.company.Day9.PhoneNumber1" table="PhoneNumber1">
+        <id name="id" type="int">
+            <column name="id"></column>
+            <generator class="increment"></generator>
+        </id>
+        <property name="number" type="string" column="number"/>
+        <many-to-one name="person" column="person_id" class="com.company.Day9.Person1" cascade="persist"/>
+
+    </class>
+</hibernate-mapping>

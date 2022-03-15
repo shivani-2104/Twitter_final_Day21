@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day7.Student" table="Student">
+        <id name="id" type="int">
+
+            <generator class="com.company.Day7.CustomIdGenerator"></generator>
+<!--            <generator class="increment"></generator>-->
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="rollNumber" column="rollNumber" type="string"/>
+        <property name="university" column="university" type="string"/>
+
+
+    </class>
+</hibernate-mapping>
+
+<!--<id name="id" type="int">-->
+
+<!--<column name="id"></column>-->
+<!--</id>-->
+
+<!--<id name="id" type="int">-->
+<!--<generator class="increment"></generator>-->
+<!--</id>-->
+
+<!--<id name="id" type="int">-->
+
+<!--<generator class="sequence"></generator>-->
+<!--</id>-->

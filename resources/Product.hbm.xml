@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day7.Product" table="Product">
+        <id name="id" type="int">
+            <column name="id"></column>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="amount" column="amount" type="integer"/>
+
+    </class>
+</hibernate-mapping>

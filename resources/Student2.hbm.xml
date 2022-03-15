@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day7.Student2" table="Student2">
+        <id name="id" type="int">
+           <column name="id" ></column>
+<!--            <generator class="com.company.Day7.CustomIdGenerator"></generator>-->
+<!--                        <generator class="increment"></generator>-->
+        </id>
+
+        <property name="marks" column="Marks" type="string"/>
+
+
+
+    </class>
+</hibernate-mapping>
+

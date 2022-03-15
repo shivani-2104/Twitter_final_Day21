@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean class="com.company.Day12.BubbleSort" lazy-init="true"/>
+    <bean class="com.company.Day12.HeapSort" />
+    <bean class="com.company.Day13.Database2" scope="singleton"/>
+
+</beans>

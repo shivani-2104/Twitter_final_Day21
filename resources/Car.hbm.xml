@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+
+    <class name="com.company.Day7.Car" table="Car">
+        <id name="id" type="int">
+
+            <generator class="increment"></generator>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="speed" column="speed" type="java.lang.Double"/>
+        <property name="horsePower" column="horsePower" type="java.lang.Float"/>
+        <property name="maker" column="maker" type="java.lang.Character"/>
+        <property name="CarNumber" column="CarNumber" type="java.lang.Long"/>
+        <property name="HachBack" column="HachBack" type="java.lang.Boolean"/>
+
+
+
+    </class>
+</hibernate-mapping>
+<!--<property name="name" column="name" type="string"/>-->
+<!--<property name="speed" column="speed" type="double"/>-->
+<!--<property name="horsePower" column="horsePower" type="float"/>-->
+<!--<property name="maker" column="maker" type="character"/>-->
+<!--<property name="CarNumber" column="CarNumber" type="long"/>-->
+<!--<property name="HachBack" column="HachBack" type="boolean"/>-->
